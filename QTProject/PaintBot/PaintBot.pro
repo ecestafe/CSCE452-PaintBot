@@ -13,13 +13,9 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp \
-    robot.cpp \
-    coloritem.cpp
+        mainwindow.cpp
 
-HEADERS  += mainwindow.h \
-    robot.h \
-    coloritem.h
+HEADERS  += mainwindow.h
 
 
 FORMS    += mainwindow.ui
