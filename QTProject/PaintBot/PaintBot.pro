@@ -17,8 +17,17 @@ SOURCES += main.cpp\
     robot.cpp \
     coloritem.cpp
 
+<<<<<<< HEAD
 HEADERS  += mainwindow.h \
     robot.h \
     coloritem.h
+=======
+HEADERS  += mainwindow.h
+RESOURCES +=
+>>>>>>> origin/Jorge
 
 FORMS    += mainwindow.ui
+
+# install
+target.path = $$[QT_INSTALL_EXAMPLES]/widgets/graphicsview/dragdroprobot
+INSTALLS += target

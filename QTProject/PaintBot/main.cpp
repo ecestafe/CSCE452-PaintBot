@@ -1,5 +1,5 @@
 #include "mainwindow.h"
-#include <QApplication>
+
 
 #include <QtWidgets>
 #include "coloritem.h"
@@ -24,8 +24,16 @@ protected:
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    MainWindow w;
-    w.show();
+    //QGraphicsScene scene;
+    //QGraphicsView view(&scene);
+    //view.setBackgroundBrush(Qt::yellow);
+    //Qgraphics
+
+
+    MainWindow m;
+   //view.show();
+    m.show();
+
 
         qsrand(QTime(0,0,0).secsTo(QTime::currentTime()));
     //! [0]
