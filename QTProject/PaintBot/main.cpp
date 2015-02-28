@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 
+<<<<<<< HEAD
 #include <QGraphicsItem>
 #include <QtWidgets>
 #include "coloritem.h"
@@ -36,6 +37,13 @@ int main(int argc, char *argv[])
     m.show();
 
 
+=======
+int main(int argc, char *argv[])
+{
+    QApplication a(argc, argv);
+    MainWindow w;
+    w.show();
+>>>>>>> parent of c0843e6... arm
 
     return a.exec();
 }
