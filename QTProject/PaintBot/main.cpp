@@ -1,6 +1,6 @@
 #include "mainwindow.h"
 
-
+#include <QGraphicsItem>
 #include <QtWidgets>
 #include "coloritem.h"
 #include "robot.h"
