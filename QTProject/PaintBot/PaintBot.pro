@@ -16,10 +16,5 @@ SOURCES += main.cpp\
         mainwindow.cpp
 
 HEADERS  += mainwindow.h
-RESOURCES +=
 
 FORMS    += mainwindow.ui
-
-# install
-target.path = $$[QT_INSTALL_EXAMPLES]/widgets/graphicsview/dragdroprobot
-INSTALLS += target
