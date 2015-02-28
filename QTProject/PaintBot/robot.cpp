@@ -116,7 +116,7 @@ RobotTorso::RobotTorso(QGraphicsItem *parent)
 
 QRectF RobotTorso::boundingRect() const
 {
-    return QRectF(-30, -20, 60, 60);
+    return QRectF(-30, -20, 60, 200);
 }
 
 void RobotTorso::paint(QPainter *painter,
@@ -174,16 +174,16 @@ Robot::Robot(QGraphicsItem *parent)
 //! [10]
 
 //! [11]
-    torsoItem->setPos(0,-50);
+    torsoItem->setPos(0,-800);
     //headItem->setPos(0, -18);
     //upperLeftArmItem->setPos(-15, -10);
     //lowerLeftArmItem->setPos(30, 0);
     upperRightArmItem->setPos(15, 310);
-    upperRightArmItem->setRotation(-10);
+    upperRightArmItem->setRotation(-90);
     lowerRightArmItem->setPos(90, 0);
-    lowerRightArmItem->setRotation(-60);
+    lowerRightArmItem->setRotation(0);
     lowerlowerRightArmItem->setPos(90,0);
-    lowerlowerRightArmItem->setRotation(-20);
+    lowerlowerRightArmItem->setRotation(0);
     //upperRightLegItem->setPos(10, 32);
     //lowerRightLegItem->setPos(30, 0);
     //upperLeftLegItem->setPos(-10, 32);
