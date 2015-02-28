@@ -14,9 +14,14 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp
+<<<<<<< HEAD
 
 HEADERS  += mainwindow.h
 
+=======
+
+HEADERS  += mainwindow.h
+>>>>>>> parent of c0843e6... arm
 
 FORMS    += mainwindow.ui
 
