@@ -13,12 +13,12 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    robot.cpp \
+    coloritem.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    robot.h \
+    coloritem.h
 
 FORMS    += mainwindow.ui
-
-# install
-target.path = $$[QT_INSTALL_EXAMPLES]/widgets/graphicsview/dragdroprobot
-INSTALLS += target
