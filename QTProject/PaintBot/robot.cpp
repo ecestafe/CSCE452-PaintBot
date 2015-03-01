@@ -26,7 +26,7 @@ void RobotTorso::paint(QPainter *painter,
     Q_UNUSED(widget);
 
     painter->setBrush(dragOver ? color.light(130) : color);
-    painter->drawEllipse(5, 300, 20, 20);
+    painter->drawEllipse(5, 350, 20, 20);
 }
 
 RobotLimb::RobotLimb(QGraphicsItem *parent, int link)
@@ -79,14 +79,18 @@ Robot::Robot(QGraphicsItem *parent)
     Link1 = new RobotLimb(torsoItem,1);
     Link2 = new RobotLimb(Link1,2);
     Link3 = new RobotLimb(Link2,3);
+    //Link4 = new RobotLimb(Link3,4);
 
-    torsoItem->setPos(0,-800);
-    Link1->setPos(15, 310);
+    auto pos = mapToScene(0,0);
+    torsoItem->setPos(pos);
+    Link1->setPos(15, 360);
     Link1->setRotation(-90);
     Link2->setPos(140, 0);
     Link2->setRotation(0);
     Link3->setPos(90,0);
     Link3->setRotation(0);
+   // Link4->setPos(40,0);
+   // Link4->setRotation(0);
 
 }
 
@@ -99,8 +103,10 @@ QRectF Robot::boundingRect() const
 void Robot::paint(QPainter *painter,
                   const QStyleOptionGraphicsItem *option, QWidget *widget)
 {
+
     Q_UNUSED(painter);
     Q_UNUSED(option);
     Q_UNUSED(widget);
+
 }
 

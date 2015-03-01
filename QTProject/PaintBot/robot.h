@@ -54,6 +54,7 @@ public:
     QGraphicsObject *Link1;
     QGraphicsObject *Link2;
     QGraphicsObject *Link3;
+   // QGraphicsObject *Link4;
 
     QRectF boundingRect() const Q_DECL_OVERRIDE;
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget = 0) Q_DECL_OVERRIDE;

@@ -37,10 +37,16 @@ private slots:
 
     void on_pushButton_6_clicked();
 
+    void on_pushButton_7_clicked();
+
 private:
     Ui::MainWindow *ui;
     QGraphicsScene *scene;
     Robot *robot;
+    //const QPen *pen;
+
+protected:
+    void paintEvent(QPaintEvent *);
 };
 
 #endif // MAINWINDOW_H
