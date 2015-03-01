@@ -16,6 +16,7 @@ protected:
     }
 };
 
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -24,7 +25,7 @@ MainWindow::MainWindow(QWidget *parent) :
     qsrand(QTime(0,0,0).secsTo(QTime::currentTime()));
 //! [0]
 //! [1]
-    Robot *robot = new Robot;
+    robot = new Robot;
     robot->setTransform(QTransform::fromScale(1.2, 1.2), true);
     robot->setPos(0, -20);
 
@@ -60,4 +61,58 @@ MainWindow::MainWindow(QWidget *parent) :
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+void MainWindow::on_pushButton_clicked()
+{
+    int rot = 0;
+    rot = robot->Link1->rotation();
+    robot->Link1->setRotation(rot - 10);
+    scene->addItem(robot);
+    ui->graphicsView->setScene(scene);
+}
+
+void MainWindow::on_pushButton_2_clicked()
+{
+    int rot = 0;
+    rot = robot->Link1->rotation();
+    robot->Link1->setRotation(rot + 10);
+    scene->addItem(robot);
+    ui->graphicsView->setScene(scene);
+}
+
+void MainWindow::on_pushButton_3_clicked()
+{
+    int rot = 0;
+    rot = robot->Link2->rotation();
+    robot->Link2->setRotation(rot - 10);
+    scene->addItem(robot);
+    ui->graphicsView->setScene(scene);
+}
+
+void MainWindow::on_pushButton_5_clicked()
+{
+    int rot = 0;
+    rot = robot->Link2->rotation();
+    robot->Link2->setRotation(rot + 10);
+    scene->addItem(robot);
+    ui->graphicsView->setScene(scene);
+}
+
+void MainWindow::on_pushButton_4_clicked()
+{
+    int rot = 0;
+    rot = robot->Link3->rotation();
+    robot->Link3->setRotation(rot - 10);
+    scene->addItem(robot);
+    ui->graphicsView->setScene(scene);
+}
+
+void MainWindow::on_pushButton_6_clicked()
+{
+    int rot = 0;
+    rot = robot->Link3->rotation();
+    robot->Link3->setRotation(rot + 10);
+    scene->addItem(robot);
+    ui->graphicsView->setScene(scene);
 }
